@@ -31,7 +31,7 @@ for T = 1: 1000
         if n == N %误差判断
             nr = sqrt(norm(res.f,'fro')^2+norm(res.g,'fro')^2);
             % nr,nF,IUIM_eps
-            if nr / nF <= max(IUIM_eps,1e-4) || nr <= 1e-8
+            if nr / nF <= max(IUIM_eps,1e-4)/10 || nr <= 1e-8
                 return
             end
         end

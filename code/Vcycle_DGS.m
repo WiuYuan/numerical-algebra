@@ -1,4 +1,4 @@
-function [poi] = Vcycle_DGS(para)
+function [poi, T] = Vcycle_DGS(para)
 %使用DGS单次迭代的Vcycle算法
 N = para.N;
 v1 = para.DGS_v1;

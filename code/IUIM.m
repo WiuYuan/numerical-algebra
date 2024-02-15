@@ -1,4 +1,4 @@
-function [poi] = IUIM(para)
+function [poi, T] = IUIM(para)
 N = para.N;
 alpha = para.alpha;
 p = zeros(N);
@@ -52,10 +52,9 @@ for T = 1: 1000
     end
     poi.p = p;
     res = Residual(poi, res_init, para);
-    nr = sqrt(norm(res.f,'fro')^2+norm(res.g,'fro')^2+norm(res.d,'fro')^2)
+    nr = sqrt(norm(res.f,'fro')^2+norm(res.g,'fro')^2+norm(res.d,'fro')^2);
     if nr / nF <= 1e-8 
         break
     end
 end
-[nr,T]
 end

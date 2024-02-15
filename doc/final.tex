@@ -161,6 +161,21 @@ Vcycle算法框架如下 (求解$Ax=b$):\\
 以下为作业pdf中新加上的限制和提升算子:\\
 \includegraphics[scale=0.5]{image/updownpdf.png}\\
 \subsection{Implementation}
+具体函数见code里的README.md\\
+\subsection{Result}
+\includegraphics[scale=0.3]{image/DGS.jpg}\\
+\begin{tabular}{llll}
+N & time & $e_N$ & steps \\ 
+\hline 
+64 & 0.14275 & 0.0085233 & 6 \\ 
+128 & 0.12871 & 0.0030007 & 6 \\ 
+256 & 0.57573 & 0.0010587 & 7 \\ 
+512 & 2.4236 & 0.00037395 & 7 \\ 
+1024 & 18.5366 & 0.00013215 & 7 \\ 
+2048 & 94.1432 & 4.6709e-05 & 7 \\ 
+\hline 
+\end{tabular}\\
+由图易见$e_N=O(\frac{1}{N})$
 \section{Uzawa Iteration Method + CG}
 \subsection{Algorithm}
 算法框架如下:\\
@@ -171,6 +186,20 @@ Vcycle算法框架如下 (求解$Ax=b$):\\
 $$
 \alpha_{\star}=\frac{2}{\lambda_{min}{B^TA^{-1}B}+\lambda_{max}{B^TA^{-1}B}}
 $$
+\subsection{Implementation}
+具体函数见code里的README.md\\
+\subsection{Result}
+\includegraphics[scale=0.3]{image/UIM.jpg}\\
+\begin{tabular}{lll}
+N & time & $e_N$ \\ 
+\hline 
+64 & 0.13661 & 0.0085233 \\ 
+128 & 0.47766 & 0.0030007 \\ 
+256 & 4.7065 & 0.0010587 \\ 
+512 & 27.9452 & 0.00037395 \\ 
+\hline 
+\end{tabular}\\
+由图易见$e_N=O(\frac{1}{N})$
 \section{Inexact Uzawa Iteration Method + Vcycle}
 \subsection{Algorithm}
 算法框架如下:\\
@@ -189,4 +218,20 @@ $$
 $$
 ||\delta_k||_2 \leq \tau||B^T\hat{U}_k||
 $$
+\subsection{Implementation}
+具体函数见code里的README.md\\
+\subsection{Result}
+\includegraphics[scale=0.3]{image/IUIM.jpg}\\
+\begin{tabular}{llll}
+N & time & $e_N$ & steps \\ 
+\hline 
+64 & 0.065143 & 0.0085233 & 4 \\ 
+128 & 0.25165 & 0.0030007 & 4 \\ 
+256 & 0.99247 & 0.0010587 & 4 \\ 
+512 & 4.0304 & 0.00037395 & 4 \\ 
+1024 & 24.4011 & 0.00013212 & 4 \\ 
+2048 & 129.3766 & 4.6674e-05 & 4 \\ 
+\hline 
+\end{tabular}\\
+由图易见$e_N=O(\frac{1}{N})$
 \end{document}
