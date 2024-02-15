@@ -4,8 +4,6 @@ Ax = CG_times(poi, para);
 res.f = res.f - Ax.f;
 res.g = res.g - Ax.g;
 N = para.N;
-z.u = zeros(N);
-z.v = zeros(N);
 for k = 1: 1000
     if sqrt(sum(sum(res.f.^2))+sum(sum(res.g.^2))) <= IUIM_eps
         break
