@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex 2024.1.14)  16 FEB 2024 00:59
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex 2024.1.14)  18 FEB 2024 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -579,7 +579,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--163
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Overfull \hbox (9.2667pt too wide) in paragraph at lines 164--167
+\TU/STSong(0)/b/n/10 为了加快速度, 采用作业pdf上的限制提升算子, 如果想测试课上讲的限制提升算子,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--167
 
  []
 
@@ -587,30 +592,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 File: image/DGS.jpg Graphic file (type bmp)
 <image/DGS.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--186
+Overfull \hbox (79.60004pt too wide) in paragraph at lines 168--227
+\TU/STSong(0)/b/n/10 咨询助教后, 助教说L可以取很大, 猜测是我写的方程的问题, 我直接采用stokes数值形式写数值方程,
+ []
 
+
+Overfull \hbox (119.87933pt too wide) in paragraph at lines 168--227
+\TU/STSong(0)/b/n/10 但还可以消除分母, 也就是将stokes压力梯度的方程乘$\OML/cmm/m/it/10 h[]$\TU/STSo
+ng(0)/b/n/10 , 速度散度的方程乘$\OML/cmm/m/it/10 h$\TU/STSong(0)/b/n/10 , 我的做法可能对方程产生影响
+,
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 229--234
+
+ []
+
+
+Overfull \hbox (56.36073pt too wide) in paragraph at lines 238--243
+$\OML/cmm/m/it/10 ^^K$\TU/STSong(0)/b/n/10 选取需要做特征值的计算, 所以我写了基本的计算最大特征值的函数, 但发现
+最大特征值为1,
+ []
+
+
+Overfull \hbox (31.07669pt too wide) in paragraph at lines 238--243
+\TU/STSong(0)/b/n/10 为了加快速度, 经过数值实验过后(输出每一步迭代后的误差), 发现刚开始误差减少飞快,
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 245--248
 
  []
 
 File: image/UIM.jpg Graphic file (type bmp)
 <image/UIM.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--211
+Underfull \hbox (badness 10000) in paragraph at lines 263--269
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+[7]
+Overfull \hbox (49.89005pt too wide) in paragraph at lines 280--283
+\TU/STSong(0)/b/n/10 注意Vcycle作为预条件子, 其实求解的就是原先方程, 为了保证速度, 或者Vcycle预条件子求解
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
 
  []
 
 File: image/IUIM.jpg Graphic file (type bmp)
 <image/IUIM.jpg>
-[7] [8] (final.aux)
+
+Overfull \hbox (68.78757pt too wide) in paragraph at lines 289--345
+\TU/STSong(0)/b/n/10 其中$\OML/cmm/m/it/10 N \OT1/cmr/m/n/10 = 2048$\TU/STSong(0)
+/b/n/10 无法收敛, 可以看出虽然$\OML/cmm/m/it/10 ^^W[]$\TU/STSong(0)/b/n/10 增大, 且效率误差影响都很小
+， 但对收敛性有一定影响,
+ []
+
+
+Overfull \hbox (2.6035pt too wide) in paragraph at lines 289--345
+\TU/STSong(0)/b/n/10 说明$\OML/cmm/m/it/10 ^^\$\TU/STSong(0)/b/n/10 取的不够小, 或者Vcyc
+le预条件子求解时 的不够精确导致共轭梯度没法收敛 
+ []
+
+[8] [9] [10] (final.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -631,4 +682,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  79i,10n,93p,287b,338s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on final.pdf (8 pages).
+Output written on final.pdf (10 pages).

@@ -1,4 +1,5 @@
 function [poi, T] = IUIM(para)
+%Inexact Uzawa方法求解stokes方程
 N = para.N;
 alpha = para.alpha;
 p = zeros(N);

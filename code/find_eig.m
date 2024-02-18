@@ -1,4 +1,5 @@
 function [rho] = find_eig(para)
+%找寻计算最优alpha要用的最大特征值
 N = para.N;
 poi.p = zeros(N);
 poi.p(1,1) = 1;

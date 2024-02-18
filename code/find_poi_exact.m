@@ -1,4 +1,5 @@
 function [poi] = find_poi_exact(para)
+%找到测试函数对应的方程精确解
 func_u = para.func_u;
 func_v = para.func_v;
 N = para.N;

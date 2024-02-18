@@ -1,4 +1,5 @@
 function [res] = Residual_init(para)
+%计算初始的F=(f,g)
 func_f = para.func_f;
 func_g = para.func_g;
 func_b = para.func_b;

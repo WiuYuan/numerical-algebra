@@ -1,4 +1,5 @@
 function [poi1] = Bttimes(poi)
+%为了计算特征值的辅助函数
 u = poi.u;
 v = poi.v;
 N = length(u);

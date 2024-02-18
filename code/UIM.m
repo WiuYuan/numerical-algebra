@@ -1,4 +1,5 @@
-function [poi] = UIM(para)
+function [poi, T] = UIM(para)
+%Uzawa方法求解stokes方程
 N = para.N;
 p = zeros(N);
 res_init = Residual_init(para);

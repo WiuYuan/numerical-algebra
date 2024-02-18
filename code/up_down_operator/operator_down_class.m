@@ -2,11 +2,15 @@ function [poi] = operator_down_class(poi, para)
 %限制算子
 u = poi.f;
 v = poi.g;
-p = poi.d;
+if typ == "DGS"
+    p = poi.d;
+end
 N = length(u);
 uu = zeros(N/2);
 vv = zeros(N/2);
-pp = zeros(N/2);
+if typ == "DGS"
+    pp = zeros(N/2);
+end
 for i = 1: N/2
     for j = 1: N/2
         if i == N/2 && j == N/2
@@ -37,11 +41,15 @@ for i = 1: N/2
                 0.125 * (v(2*i-1, 2*j-1)+v(2*i, 2*j-1) + ...
                 v(2*i-1, 2*j+1)+v(2*i, 2*j+1));
         end
-        pp(i,j) = (p(2*i-1, 2*j-1)+p(2*i, 2*j-1)+p(2*i-1, 2*j)+p(2*i, 2*j))/4;
+        if typ == "DGS"
+            pp(i,j) = (p(2*i-1, 2*j-1)+p(2*i, 2*j-1)+p(2*i-1, 2*j)+p(2*i, 2*j))/4;
+        end
     end
 end
 poi.f = uu;
 poi.g = vv;
-poi.d = pp;
+if typ == "DGS"
+    poi.d = pp;
+end
 end
 

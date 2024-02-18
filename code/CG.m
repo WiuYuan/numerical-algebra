@@ -1,4 +1,5 @@
 function [poi] = CG(poi, res, para)
+%Uzawa方法中求解方程精确解的共轭梯度法
 b_norm = sqrt(sum(sum(res.f.^2))+sum(sum(res.g.^2)));
 Ax = CG_times(poi, para);
 res.f = res.f - Ax.f;

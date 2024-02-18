@@ -27,7 +27,7 @@ get_para(N): 得到全局常数
 GS(poi, res, para): 做一次$A\hat{U}_{k+1}=F-BP_k$的Gauss迭代, poi是初始点，res是$F-BP_k$
 Residual_init(para): 计算最初的数值stokes方程常数
 Residual(poi, res, para): 计算现在得到解poi的数值stokes方程误差
-table2latex(T, file): 将table转化为latex代码
+table2latex(T, file): 将table转化为latex代码(这是从网上直接下载的函数)
 Vcycle_CG(res, IUIM_eps, para): 作为共轭梯度法中的Vcycle预条件算子, 单次迭代取GS
 
 ## 主要函数

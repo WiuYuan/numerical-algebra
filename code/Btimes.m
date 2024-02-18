@@ -1,4 +1,5 @@
 function [poi1] = Btimes(poi)
+%为了计算特征值的辅助函数
 p = poi.p;
 N = length(p);
 u = zeros(N);
